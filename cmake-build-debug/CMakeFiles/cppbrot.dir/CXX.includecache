@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/elsholz/CLionProjects/cppbrot/main.cpp
+iostream
+-
+ncurses.h
+/home/elsholz/CLionProjects/cppbrot/ncurses.h
+chrono
+/home/elsholz/CLionProjects/cppbrot/chrono
+unistd.h
+/home/elsholz/CLionProjects/cppbrot/unistd.h
+string
+-
+math.h
+-
+

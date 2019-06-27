@@ -1,0 +1,3 @@
+/home/elsholz/CLionProjects/cppbrot/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/elsholz/CLionProjects/cppbrot/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/elsholz/CLionProjects/cppbrot/cmake-build-debug/CMakeFiles/cppbrot.dir
