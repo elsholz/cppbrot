@@ -7,9 +7,15 @@
 
 //using namespace ncurses;
 
-int main() {
+int main(int argc, char *argv[]) {
     initscr();
     start_color();
+    std::string jul_arg = "--julia";
+
+    bool julia = false;
+    for(int i = 0; i<argc; i++)
+        if (jul_arg.compare(argv[i]) == 0)
+            julia = true;
 
     const int c16 = 16;
     const int c17 = 17;
@@ -87,8 +93,12 @@ int main() {
                 }
                 long double x_res = (x - (long double) ww / 1.5) / (5 * zoom_level) + sx;//0.74601;
                 long double y_res = (y - (long double) wh / 2.0) / (2.5 * zoom_level) + sy;//0.1001;
-                const long double cx = x_res;
-                const long double cy = y_res;
+                long double cx = x_res;
+                long double cy = y_res;
+                if (julia) {
+                    cx = sx;
+                    cy = sy;
+                }
 
                 unsigned int iter_count = 0;
                 for (; iter_count < max_iteration_count; iter_count++) {
