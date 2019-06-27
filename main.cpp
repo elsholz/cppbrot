@@ -74,8 +74,17 @@ int main() {
         //char* display = new char[wh][ww];
         char display[wh][ww];
 
+        std::string txt = "X:" + std::to_string(sx) + "   Y:" + std::to_string(sy) + " iter.:" +
+                          std::to_string(max_iteration_count) + " Zoom:" + std::to_string(zoom_level) + "x" +
+                          "                              ";
+
         for (int y = 0; y < wh; y++) {
             for (int x = 0; x < ww; x++) {
+                if (y == 0 && x < 70) {
+
+                    display[y][x] = txt[x];
+                    continue;
+                }
                 long double x_res = (x - (long double) ww / 1.5) / (5 * zoom_level) + sx;//0.74601;
                 long double y_res = (y - (long double) wh / 2.0) / (2.5 * zoom_level) + sy;//0.1001;
                 const long double cx = x_res;
@@ -134,7 +143,7 @@ int main() {
 
         clear();
         for (int row = 0; row < wh; row++) {
-            for(int column = 0; column < ww; column++){
+            for (int column = 0; column < ww; column++) {
                 switch (display[row][column]) {
                     case '#':
                         attron(COLOR_PAIR(1));
@@ -164,6 +173,12 @@ int main() {
                         attron(COLOR_PAIR(9));
                         break;
                 }
+                if (row == 0 && column < 70) {
+                    const int c99 = 99;
+                    init_color(c99, 1000, 200, 700);
+                    init_pair(99, c99, COLOR_BLACK);
+                    attron(COLOR_PAIR(99));
+                }
                 addch(display[row][column]);
             }
 
@@ -177,10 +192,10 @@ int main() {
         //max_iteration_count *= 1.005;
         current_frame_index++;
         // usleep(delay_micro_seconds);
-        const long double shift = 2 * 1/zoom_level;
+        const long double shift = 2 * 1 / zoom_level;
         char dir = getch();
 
-        switch (dir){
+        switch (dir) {
             case 'h':
                 sx -= shift;
                 break;
