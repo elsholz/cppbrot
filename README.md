@@ -18,7 +18,11 @@ To navigate aroung use VIM key bindings:
 - `K` Zoom In
 - `+` Increase Iteration Count
 - `-` Decrease Iteration Count
-
+### If run with option `--julia`
+- `w` Decrease Julia y constant
+- `s` Increase Julia y constant
+- `a` Decrease Julia x constant
+- `d` Increase Julia x constant
 
 ## Old:
 pybrot renders fractals using (partly) python in the terminal
