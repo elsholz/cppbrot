@@ -4,6 +4,9 @@
 Whereas the python version doesn't do a lot, the c++ version is a Mandelbrot explorer.
 You can use the keyboard to navigate the rendering. Terminal with color support required. Uses ncurses.
 
+## What it looks like rn 🔥
+![img of fractal shall appear here](https://github.com/elsholz/pybrot/blob/master/examples/2019-06-27-220018_1600x900_scrot.png "Mandelbrot.jpg😉")
+
 ## Usage
 Execute `cmake-build-debug/cppbrot` or compile yourself. <br> 
 To navigate aroung use VIM key bindings:
@@ -15,9 +18,6 @@ To navigate aroung use VIM key bindings:
 - `K` Zoom In
 - `+` Increase Iteration Count
 - `-` Decrease Iteration Count
-
-## What it looks like rn 🔥
-![img of fractal shall appear here](https://github.com/elsholz/pybrot/blob/master/examples/2019-06-27-220018_1600x900_scrot.png "Mandelbrot.jpg😉")
 
 
 ## Old:
