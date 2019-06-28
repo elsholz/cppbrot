@@ -16,7 +16,11 @@ To navigate aroung use VIM key bindings:
 - `+` Increase Iteration Count
 - `-` Decrease Iteration Count
 
+## What it looks like rn 🔥
+![img of fractal shall appear here](https://github.com/elsholz/pybrot/blob/master/examples/2019-06-27-220018_1600x900_scrot.png "Mandelbrot.jpg😉")
+
+
 ## Old:
 pybrot renders fractals using (partly) python in the terminal
 Example:
-![img of fractal shall appear here](https://github.com/elsholz/pybrot/blob/master/examples/newest.png "Logo Title Text 1")
+![img of fractal shall appear here](https://github.com/elsholz/pybrot/blob/master/examples/newest.png "🔥")
