@@ -1,1 +1,0 @@
-/usr/bin/c++  -lncurses -g   CMakeFiles/cppbrot.dir/main.cpp.o  -o cppbrot 
