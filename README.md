@@ -33,7 +33,3 @@ To navigate aroung use VIM key bindings:
 For the future, I can imagine to take the output of the program `cli-visualizer` and use it to generate a music visualizer based on the Mandelbrot set. E.g. The levels of the different frequencies as visualized by cls-visualizer could be taken to set the colors for different iteration levels. Also the frequencies could affect the movement of a julia set.\
 Another Option would be to add an option named `--split` and have a split view that shows the mandelbrot set and its corresponding julia set at the current position.
 
-## Old:
-pybrot renders fractals using (partly) python in the terminal
-Example:
-![img of fractal shall appear here](https://github.com/elsholz/pybrot/blob/master/examples/newest.png "🔥")
