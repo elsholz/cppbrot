@@ -1,7 +1,6 @@
-# `pybrot`
-`pybrot`'s name might be a bit confusing, as the most recent implementation is based on c++.
+# `cppbrot`
 
-Whereas the python version doesn't do a lot, the c++ version is a Mandelbrot explorer.
+cppbrot is a terminal based Mandelbrot explorer.
 You can use the keyboard to navigate the rendering. Terminal with color support required. Uses ncurses.
 
 ## What it looks like rn 🔥
